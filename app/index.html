@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aura - коллекция стикеров</title>
 	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,8 +32,16 @@
         <div class="hero__text">
           <h1 class="hero__title">Площадка для&nbsp;реализации криптостикеров</h1>
           <div class="hero__buttons">
-            <a href="#" class="hero__btn hero__btn--fill">Купить</a>
-            <a href="#" class="hero__btn hero__btn--stroke">Стать автором</a>
+            <a href="#" class="hero__btn hero__btn--fill">
+              <span class="hero__btn-text">
+                Купить
+              </span>
+            </a>
+            <a href="#" class="hero__btn hero__btn--stroke">
+              <span class="hero__btn-text">
+                Стать автором
+              </span>
+            </a>
           </div>
         </div>
 			</div>
@@ -62,22 +71,26 @@
 							<div class="auction-timer">
 								<span class="auction-timer__caption">Окончание через:</span>
 								<div class="auction-timer__content">
-									<div class="action-timer__part">
+									<div class="auction-timer__part">
 										<span class="auction-timer__value">01</span>
 										<span class="auction-timer__text">Час</span>
 									</div>
-									<div class="action-timer__part">
+									<div class="auction-timer__part">
 										<span class="auction-timer__value">48</span>
 										<span class="auction-timer__text">Мин</span>
 									</div>
-									<div class="action-timer__part">
+									<div class="auction-timer__part">
 										<span class="auction-timer__value">47</span>
 										<span class="auction-timer__text">Сек</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button class="btn btn--fill auction-bet-section__btn">Cделать ставку</button>
+						<button class="btn btn--fill auction-bet-section__btn">
+              <span class="btn__text">
+                Cделать ставку
+              </span>
+            </button>
 					</div>
 				</div>
 			</div>
@@ -85,7 +98,7 @@
 		<section class="auction">
 			<div class="container">
 				<h2 class="second-title auction__title">Другие аукционы</h2>
-				<ul class="auction__list">
+				<ul class="auction__list list-reset">
 					<li class="auction__item">
 						<article class="auction-product">
 							<div class="auction-product__image">
@@ -216,7 +229,11 @@
 					</li>
 				</ul>
 				<div class="btn-center">
-					<button class="btn btn--stroke auction__more">Все аукционы</button>
+					<button class="btn btn--stroke auction__more">
+            <span class="btn__text">
+              Все аукционы
+            </span>
+          </button>
 				</div>
 			</div>
 		</section>
@@ -232,17 +249,40 @@
 								<img src="img/new-3.png" alt="Изображение стикера">
 							</div>
 						</div>
+            <div class="swiper-slide">
+              <div class="new__stickers">
+                <img src="img/new-4.png" alt="Изображение стикера">
+                <img src="img/new-5.png" alt="Изображение стикера">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new__stickers">
+                <img src="img/new-6.png" alt="Изображение стикера">
+                <img src="img/new-7.png" alt="Изображение стикера">
+                <img src="img/new-8.png" alt="Изображение стикера">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new__stickers">
+                <img src="img/new-9.png" alt="Изображение стикера">
+              </div>
+            </div>
 					</div>
 				</div>
+        <div class="new__pagination swiper-pagination"></div>
 			</div>
 		</section>
 		<section class="subscribe">
-			<div class="container">
+			<div class="container subscribe__container">
 				<h2 class="second-title subscribe__title">Будь в курсе новинок! Подпишись на рассылку!</h2>
 				<form action="#" class="subscribe-form">
 					<input type="text" class="form-input subscribe-form__input form-input--dark" placeholder="Имя" name="name">
 					<input type="email" class="form-input subscribe-form__input form-input--dark" placeholder="E-mail" name="email">
-					<button class="btn btn--fill subscribe-form__btn">Подписаться</button>
+					<button class="btn btn--fill subscribe-form__btn">
+            <span class="btn__text">
+              Подписаться
+            </span>
+          </button>
 					<label class="checkbox">
 						<input type="checkbox" class="checkbox__input" name="checkbox">
 						<span class="checkbox__text">Согласен на обработку персональных данных</span>
@@ -280,7 +320,7 @@
 		<section class="top">
 			<div class="container">
 				<h2 class="title">Топ продаж</h2>
-				<ul class="top__list">
+				<ul class="top__list list-reset">
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
@@ -387,11 +427,11 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__top">
-			<div class="container">
+			<div class="container footer__container">
 				<a class="logo">
 					<img src="img/logo.svg" alt="Логотип компании Аура">
 				</a>
-				<ul class="footer__list">
+				<ul class="footer__list list-reset">
 					<li class="footer__item"><a href="#" class="footer__link">Соглашение</a></li>
 					<li class="footer__item"><a href="#" class="footer__link">Лицензия</a></li>
 					<li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
@@ -402,5 +442,7 @@
 			<span class="footer__text">AURA<sup class="reg">&reg;</sup>&nbsp;| 2021</span>
 		</div>
 	</footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
