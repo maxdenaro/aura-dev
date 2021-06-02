@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="header">
@@ -244,27 +245,54 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="new__stickers">
-								<img src="img/new-1.png" alt="Изображение стикера">
-								<img src="img/new-2.png" alt="Изображение стикера">
-								<img src="img/new-3.png" alt="Изображение стикера">
+                <picture>
+                  <source srcset="img/new-1-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-1.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-2-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-2.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-3-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-3.png" alt="Изображение стикера">
+                </picture>
 							</div>
 						</div>
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-4.png" alt="Изображение стикера">
-                <img src="img/new-5.png" alt="Изображение стикера">
+                <picture>
+                  <source srcset="img/new-4-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-4.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-5-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-5.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-6.png" alt="Изображение стикера">
-                <img src="img/new-7.png" alt="Изображение стикера">
-                <img src="img/new-8.png" alt="Изображение стикера">
+                <picture>
+                  <source srcset="img/new-6-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-6.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-7-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-7.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source srcset="img/new-8-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-8.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new__stickers">
-                <img src="img/new-9.png" alt="Изображение стикера">
+                <picture>
+                  <source srcset="img/new-9-tablet.png" media="(max-width: 1440px)">
+                  <img src="img/new-9.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
 					</div>
@@ -292,39 +320,47 @@
 		</section>
 		<section class="become-author">
 			<div class="container">
-				<h2 class="title">Стать автором</h2>
 				<div class="become-author__content">
 					<div class="become-author__text">
-						<p class="become-author__descr">
-							<strong>Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать к&nbsp;нам!</strong>
+            <h2 class="title become-author__title">Стать автором</h2>
+						<p class="become-author__subtitle">
+							Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать к&nbsp;нам!
 						</p>
 						<p class="become-author__descr">
 							Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши свой ник в&nbsp;телеграме. Если наши кураторы
-							решат, что нам по&nbsp;пути,
-							то&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;тобой и&nbsp;обговорим условия сотрудничества! <b>Удачи!</b>
+							решат, что нам по&nbsp;пути, то мы обязательно свяжемся с&nbsp;тобой и&nbsp;обговорим условия сотрудничества! <b>Удачи!</b>
 						</p>
 						<img src="img/become-decorate.png" alt="" class="become-author__decorate" aria-hidden="true">
 					</div>
 					<div class="become-author__form">
-						<label class="file">
+						<label class="file become-author__file">
 							<input type="file" class="file__input" accept="image/*">
 							<span class="file__icon"></span>
 							<span class="file__content">Прикрепить работы (.jpeg / .png)</span>
 						</label>
 						<input type="text" class="form-input become-author__input form-input--light" placeholder="@telegram_nickname" name="telegram_nick">
-						<button class="btn btn--fill become-author__btn">Отправить</button>
+						<div class="become-author__wrap">
+              <button class="btn btn--fill become-author__btn">
+                <span class="btn__text">
+                  Отправить
+                </span>
+              </button>
+            </div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="top">
 			<div class="container">
-				<h2 class="title">Топ продаж</h2>
+				<h2 class="title top__title">Топ продаж</h2>
 				<ul class="top__list list-reset">
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
-								<img src="img/top-1.png" alt="Изображение стикера Holofobia1">
+                <picture>
+                  <source srcset="img/top-1-tablet.png" media="(max-width: 768px)">
+                  <img src="img/top-1.png" alt="Изображение стикера Holofobia1">
+                </picture>
 							</div>
 							<div class="top-product__info">
 								<div class="auction-owner top-product__owner">
@@ -339,7 +375,10 @@
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
-								<img src="img/top-2.png" alt="Изображение стикера Y.EEE">
+                <picture>
+                  <source srcset="img/top-2-tablet.png" media="(max-width: 768px)">
+                  <img src="img/top-2.png" alt="Изображение стикера Y.EEE">
+                </picture>
 							</div>
 							<div class="top-product__info">
 								<div class="auction-owner top-product__owner">
@@ -354,7 +393,10 @@
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
-								<img src="img/top-3.png" alt="Изображение стикера Baby Joda">
+                <picture>
+                  <source srcset="img/top-3-tablet.png" media="(max-width: 768px)">
+                  <img src="img/top-3.png" alt="Изображение стикера Baby Joda">
+                </picture>
 							</div>
 							<div class="top-product__info">
 								<div class="auction-owner top-product__owner">
@@ -369,7 +411,10 @@
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
-								<img src="img/top-4.png" alt="Изображение стикера Infinity_09">
+                <picture>
+                  <source srcset="img/top-4-tablet.png" media="(max-width: 768px)">
+                  <img src="img/top-4.png" alt="Изображение стикера Infinity_09">
+                </picture>
 							</div>
 							<div class="top-product__info">
 								<div class="auction-owner top-product__owner">
@@ -384,7 +429,10 @@
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
-								<img src="img/top-5.png" alt="Изображение стикера Sadsadsad">
+                <picture>
+                  <source srcset="img/top-5-tablet.png" media="(max-width: 768px)">
+                  <img src="img/top-5.png" alt="Изображение стикера Sadsadsad">
+                </picture>
 							</div>
 							<div class="top-product__info">
 								<div class="auction-owner top-product__owner">
@@ -399,7 +447,10 @@
 					<li class="top__item">
 						<article class="top-product">
 							<div class="top-product__image">
-								<img src="img/top-6.png" alt="Изображение стикера Attntn">
+                <picture>
+                  <source srcset="img/top-6-tablet.png" media="(max-width: 768px)">
+                  <img src="img/top-6.png" alt="Изображение стикера Attntn">
+                </picture>
 							</div>
 							<div class="top-product__info">
 								<div class="auction-owner top-product__owner">
@@ -415,9 +466,9 @@
 			</div>
 		</section>
 		<section class="top-info">
-			<div class="container">
+			<div class="container top-info__container">
 				<h2 class="top-info__title">Для попадания в топ необходимо:</h2>
-				<ul class="top-info__list">
+				<ul class="top-info__list list-reset">
 					<li class="top-info__item" style="background-image: url('img/top-info-1.svg');">Минимум пять опубликованных работ</li>
 					<li class="top-info__item" style="background-image: url('img/top-info-2.svg');">Инвайт трём коллегам по цеху</li>
 					<li class="top-info__item" style="background-image: url('img/top-info-3.svg');">Верифицированный аккаунт</li>
